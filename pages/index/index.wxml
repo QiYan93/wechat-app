@@ -1,0 +1,35 @@
+<!--pages/index/index.wxml-->
+<swiper indicator-dots="{{indicatorDots}}"
+  autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+    <swiper-item wx:for="{{imgUrls}}" wx:key="{{item}}">
+        <image src="{{item}}" class="slide-image" width="375" height="150"/>
+    </swiper-item>
+</swiper>
+
+<view>
+    <view>
+        <icon type="success" size="23" />
+    </view>
+    <icon type="success_no_circle" size="23" />
+    <icon type="info" size="23" />
+    <icon type="warn" size="23" />
+    <icon type="waiting" size="23" />
+    <icon type="cancel" size="23" />
+    <icon type="download" size="23" />
+    <icon type="search" size="23" />
+    <icon type="clear" size="23" />
+</view>
+
+<view>
+    <progress percent="60" show-info stroke-width="10" color="red" active="true" />
+</view>
+<view>
+    <button bindtap="bindViewTap" type="default" size="default" plain hover-class> 打开图片 </button>
+</view>
+<view>
+    <slider min="0" max="100" step="1" show-value value="10"/>
+</view>
+
+<view>
+    <button plain bindtap="alert">提醒</button>
+</view>
