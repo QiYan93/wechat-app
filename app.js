@@ -1,30 +1,27 @@
-//app.js
+const mta = require('./utils/mta_analysis.js');
 App({
-  onLaunch: function () {
-    //调用API从本地缓存中获取数据
-    var logs = wx.getStorageSync('logs') || []
-    logs.unshift(Date.now())
-    wx.setStorageSync('logs', logs)
-  },
-  getUserInfo:function(cb){
-    var that = this
-    if(this.globalData.userInfo){
-      typeof cb == "function" && cb(this.globalData.userInfo)
-    }else{
-      //调用登录接口
-      wx.login({
-        success: function (res) {
-          wx.getUserInfo({
-            success: function (res) {
-              that.globalData.userInfo = res.userInfo
-              typeof cb == "function" && cb(that.globalData.userInfo)
-            }
-          })
-        }
-      })
-    }
-  },
-  globalData:{
-    userInfo:null
-  }
+	onLaunch() {
+		mta.App.init({
+			"appID":"500439075"
+		});
+		var that = this;
+	},
+	getUserData(cb) {
+		var that = this;
+		if (this.userData.token) {
+			typeof cb == "function" && cb(this.userData.token)
+		} else {
+			//调用登录接口
+			wx.login({
+				success: function (res) {
+					let code = res.code;
+					// console.log(code)
+					wx.getUserInfo({
+						success: function (res) {
+						}
+					})
+				}
+			})
+		}
+	}
 })

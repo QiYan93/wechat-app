@@ -1,0 +1,39 @@
+.page-index-wrapper {
+  height: 100%;
+  padding: 30px 15px;
+  background: #fff;
+  box-sizing: border-box; }
+  .page-index-wrapper .block {
+    position: relative;
+    background: #f2f2f2; }
+    .page-index-wrapper .block .clear {
+      z-index: 99;
+      position: absolute;
+      right: 10px;
+      top: 16px; }
+    .page-index-wrapper .block .hide {
+      display: none; }
+  .page-index-wrapper .form-input {
+    width: 620rpx;
+    height: 50px;
+    margin-bottom: 15px;
+    padding: 0 1em;
+    background: #f2f2f2;
+    box-sizing: border-box; }
+  .page-index-wrapper .placeholder-class {
+    font-size: 14px; }
+  .page-index-wrapper .form-picker {
+    height: 50px;
+    line-height: 50px;
+    margin-bottom: 15px;
+    padding-left: 1em;
+    background: #f2f2f2; }
+  .page-index-wrapper .form-btn {
+    color: #fff;
+    background: #1296db; }
+  .page-index-wrapper .cells {
+    margin-top: 15px; }
+    .page-index-wrapper .cells .cell {
+      height: 30px;
+      line-height: 30px;
+      padding-left: 1em; }

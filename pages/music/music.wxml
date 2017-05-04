@@ -1,7 +1,0 @@
-<view>
-    <audio controls src="http://183.134.14.115/m10.music.126.net/20161124111134/82cee5e5f53fc6c4157209f001b77a9e/ymusic/4768/ed02/cd57/a003cfd1fa5fcf00389f78d2e4ca4980.mp3?wshc_tag=1&wsts_tag=5836548b&wsid_tag=b4ad39cf&wsiphost=ipdbm"></audio>
-</view>
-
-<view>
-    <video src="http://wxsnsdy.tc.qq.com/105/20210/snsdyvideodownload?filekey=30280201010421301f0201690402534804102ca905ce620b1241b726bc41dcff44e00204012882540400&bizid=1023&hy=SH&fileparam=302c020101042530230204136ffd93020457e3c4ff02024ef202031e8d7f02030f42400204045a320a0201000400" controls="controls"></video>
-</view>

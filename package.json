@@ -1,0 +1,19 @@
+{
+  "name": "chakuaidi",
+  "version": "0.0.1",
+  "description": "chakuaidi",
+  "main": "app.js",
+  "scripts": {
+    "css": "gulp"
+  },
+  "author": "Qiyan93",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.0.0"
+  },
+  "dependencies": {
+    "crypto": "0.0.3"
+  }
+}

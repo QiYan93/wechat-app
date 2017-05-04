@@ -1,7 +1,0 @@
-/* pages/index/index.wxss */
-.scrollView{
-    height: 500rpx;
-}
-image{
-    width: 100%;
-}

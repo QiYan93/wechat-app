@@ -1,0 +1,15 @@
+<view class="page-history-wrap">
+    <view class="block">
+        <view class="title">{{ title }}</view>
+        <view class="detail">
+            <view class="none" wx:if="{{error}}">{{error}}</view>
+            <view class="cells" wx:if="{{!error}}">
+                <view class="cell" wx:for="{{history}}" wx:key="{{item.type}}" data-index="{{index}}" bindtap="toDetail">
+                    <view class="name">{{item.name}}</view>
+                    <view class="number">{{item.number}}</view>
+                </view>
+            </view>
+            <view class="clear" wx:if="{{!error}}" bindtap="clearHistory">清空查询记录</view>
+        </view>
+    </view>
+</view>

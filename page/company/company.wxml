@@ -1,0 +1,14 @@
+<view class="page-company-wrap">
+    <view class="block">
+        <view class="title">{{ title }}</view>
+        <view class="detail">
+            <view class="none" wx:if="{{error}}">{{error}}</view>
+            <view class="cells" wx:if="{{!error}}">
+                <view class="cell" wx:for="{{data.Shippers}}" wx:key="{{item.ShipperCode}}" data-index="{{index}}" bindtap="selectType">
+                    <view class="name">{{item.ShipperName}}</view>
+                    <view class="number">{{option.number}}</view>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>

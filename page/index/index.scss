@@ -1,0 +1,49 @@
+.page-index-wrapper{
+    height: 100%;
+    padding: 30px 15px;
+    background: #fff;
+    box-sizing: border-box;
+    .block{
+        position: relative;
+        background: #f2f2f2;
+        .clear{
+            z-index: 99;
+            position: absolute;
+            right: 10px;
+            top: 16px;
+        }
+        .hide{
+            display: none;
+        }
+    }
+    .form-input{
+        width: 620rpx;
+        height: 50px;
+        margin-bottom: 15px;
+        padding: 0 1em;
+        background: #f2f2f2;
+        box-sizing: border-box;
+    }
+    .placeholder-class{
+        font-size: 14px;
+    }
+    .form-picker{
+        height: 50px;
+        line-height: 50px;
+        margin-bottom: 15px;
+        padding-left: 1em;
+        background: #f2f2f2;
+    }
+    .form-btn{
+        color: #fff;
+        background: #1296db;
+    }
+    .cells{
+        margin-top: 15px;
+        .cell{
+            height: 30px;
+            line-height: 30px;
+            padding-left: 1em;
+        }
+    }
+}

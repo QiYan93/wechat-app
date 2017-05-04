@@ -1,0 +1,15 @@
+<view class="page-detail-wrap">
+    <view class="block">
+        <view class="title">{{ title }}</view>
+        <view class="detail">
+            <view class="none" wx:if="{{result.msg}}">{{result.msg}}</view>
+            <view class="none" wx:if="{{result.Traces.length<=0}}">{{result.Reason}}</view>
+            <view class="cells" wx:if="{{result.Traces.length>0}}">
+                <view class="cell" wx:for="{{result.Traces}}" wx:key="{{item.AcceptTime}}">
+                    <view class="time">{{item.AcceptTime}}</view>
+                    <view class="status">{{item.AcceptStation}}</view>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>

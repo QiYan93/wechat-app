@@ -1,0 +1,12 @@
+<view class="page-index-wrapper">
+    <view class="block">
+        <input class="form-input" placeholder="请输入运单号" type="text" confirm-type="search" bindfocus="showClear" bindinput="getNumber" value="{{number}}" />
+        <icon class="clear {{number?'':'hide'}}" type="clear" size="20" bindtap="clear" />
+    </view>
+    <picker mode="selector" range="{{hotType}}" range-key="name" value="{{index}}" bindchange="selectType">
+        <view class="form-picker">
+            选择快递公司：{{hotType[index].name}}
+        </view>
+    </picker>
+    <button class="form-btn" type="default" bindtap="toDetail" disabled="{{disabled}}">马上查询</button>
+</view>
