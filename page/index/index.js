@@ -169,14 +169,24 @@ Page({
                 })
             }else{
                 wx.navigateTo({
-                    url: '/page/detail/detail?type='+type+'&number='+number+'&name='+name
+                    url: '/page/detail/detail?type='+type+'&number='+number+'&name='+name,
+                    complete: function(){
+                        that.setData({
+                            disabled: false
+                        })
+                    }
                 })
             }
         }else{
             wx.showToast({
                 title: '请填写运单号',
                 image:'../../images/err.png',
-                duration: 1500
+                duration: 1500,
+                complete: function(){
+                    that.setData({
+                        disabled: false
+                    })
+                }
             })
         }
     },
