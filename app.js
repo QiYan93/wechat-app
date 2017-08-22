@@ -2,7 +2,7 @@ const mta = require('./utils/mta_analysis.js');
 App({
 	onLaunch() {
 		mta.App.init({
-			"appID":"500439075"
+			"appID":"*******"
 		});
 		var that = this;
 	},
