@@ -148,8 +148,9 @@ Page({
                                 url: '/page/company/company?type='+type+'&number='+number
                             })
                         }else{
+                            var ShipperCode = res.data.data.Shippers[0].ShipperCode;
                             wx.navigateTo({
-                                url: '/page/detail/detail?type='+type+'&number='+number+'&name='+name
+                                url: '/page/detail/detail?type='+ShipperCode+'&number='+number+'&name='+name
                             })
                         }
                     },
