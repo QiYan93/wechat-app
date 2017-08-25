@@ -8,10 +8,14 @@
         border-radius: 5px;
         background: #fff;
         .title{
+            overflow: hidden;
             height: 50%;
             line-height: 50px;
+            padding: 0 60rpx;
             text-align: center;
+            text-overflow: ellipsis;
             border-bottom: 1px solid #ddd;
+            box-sizing: border-box;
         }
         .detail{
             .none{

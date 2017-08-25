@@ -3,8 +3,7 @@
     "page/index/index",
     "page/detail/detail",
     "page/company/company",
-    "page/history/history",
-    "page/about/about"
+    "page/history/history"
   ],
   "window":{
     "backgroundTextStyle":"dark",
@@ -29,9 +28,6 @@
       "text":"历史纪录",
       "iconPath":"images/history.png",
       "selectedIconPath":"images/history-selected.png"
-    },{
-      "pagePath":"page/about/about",
-      "text":"关于"
     }]
   }
 }

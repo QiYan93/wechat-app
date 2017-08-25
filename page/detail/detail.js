@@ -18,9 +18,36 @@ Page({
     onReady() {
         mta.Page.init()
     },
+    /* 下拉刷新 */
     onPullDownRefresh(){
         this.getData(this.data.option)
     },
+    /* 分享 */
+    onShareAppMessage(){
+        var option = this.data.option,
+            type = option.type,
+            name = option.name,
+            number = option.number;
+        return {
+            title: name+'--单号：'+number,
+            path: 'page/detail/detail?type='+type+'&number='+number+'&name='+name,
+            success: function(){
+                wx.showToast({
+                    title: '分享成功',
+                    icon: 'success',
+                    duration: 1500
+                })
+            },
+            fail: function(err){
+                wx.showToast({
+                    title: '分享失败',
+                    image: '../../images/error.png',
+                    duration: 1500
+                })
+            }
+        }
+    },
+    /* 获取数据 */
     getData(option){
         var that = this;
         var type = option.type;
@@ -58,6 +85,7 @@ Page({
             }
         })
     },
+    /* 存储历史纪录 */
     setHistory(option){
         var history = wx.getStorageSync('history');
         if(history){
