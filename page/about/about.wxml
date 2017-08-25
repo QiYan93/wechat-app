@@ -1,0 +1,16 @@
+<view class="page-about-wrapper">
+    <view class="info">
+        <image class="logo" src="../../images/logo.png"></image>
+        <view class="name">可贴快递</view>
+        <view class="desc">一款很轻很轻的快递查询小程序</view>
+    </view>
+    <view class="thanks">
+        <view class="line">
+            数据来源：快递鸟（<text class="href">http://www.kdniao.com</text>）
+        </view>
+        <view class="line">
+            icon来源：iconfont（<text class="href">http://www.iconfont.cn</text>）
+        </view>
+    </view>
+    <!-- <button class="contact" size="mini" open-type="contact" session-from="weixin_base">意见反馈</button> -->
+</view>

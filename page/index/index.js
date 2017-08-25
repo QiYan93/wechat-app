@@ -177,7 +177,7 @@ Page({
                     fail: function () {
                         wx.showToast({
                             title: '服务器错误',
-                            image:'../../images/err.png',
+                            image:'../../images/errer.png',
                             duration: 2000
                         })
                     },
@@ -201,7 +201,7 @@ Page({
         }else{
             wx.showToast({
                 title: '请填写运单号',
-                image:'../../images/err.png',
+                image:'../../images/errer.png',
                 duration: 1500,
                 complete: function(){
                     that.setData({

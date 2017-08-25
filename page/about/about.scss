@@ -1,0 +1,45 @@
+.page-about-wrapper {
+    .info{
+        padding-top: 200rpx;
+        text-align: center;
+        .logo{
+            width: 81px;
+            height: 81px;
+            margin: 0 auto;
+        }
+        .name{
+            line-height: 40px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        .desc{
+            color: #999;
+        }
+    }
+    .contact{
+        position: absolute;
+        left: 50%;
+        bottom: 200rpx;
+        width: 100px;
+        margin-left: -50px;
+        color: #fff;
+        background: #1296db;
+    }
+    .thanks{
+        position: absolute;
+        bottom: 15px;
+        width: 100%;
+        padding: 0 30px;
+        text-align: center;
+        box-sizing: border-box;
+        .line{
+            line-height: 20px;
+            color: #999;
+            font-size: 12px;
+            .href{
+                color: #1296db;
+                text-decoration: underline;
+            }
+        }
+    }
+}

@@ -12,4 +12,11 @@
             </view>
         </view>
     </view>
+    <button 
+        class="btn-share"
+        hover-class="btn-share-hover" 
+        size="mini"
+        open-type="share">
+        分享此单号
+    </button>
 </view>

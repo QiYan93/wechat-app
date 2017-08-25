@@ -31,6 +31,7 @@ Page({
         return {
             title: name+'--单号：'+number,
             path: 'page/detail/detail?type='+type+'&number='+number+'&name='+name,
+            imageUrl: '../../images/share.png',
             success: function(){
                 wx.showToast({
                     title: '分享成功',

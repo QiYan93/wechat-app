@@ -1,5 +1,5 @@
 .page-detail-wrap{
-    padding: 30px 0;
+    padding: 30px 0 60px 0;
     box-sizing: border-box;
     .block{
         width: 80%;
@@ -41,5 +41,16 @@
                 }
             }
         }
+    }
+    .btn-share{
+        position: fixed;
+        left: 50%;
+        bottom: 15px;
+        color: #fff;
+        background: #1296db;
+        transform: translateX(-50%);
+    }
+    .btn-share-hover{
+        background: rgba(18, 150, 219, .7);
     }
 }
