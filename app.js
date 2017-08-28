@@ -1,9 +1,5 @@
-const mta = require('./utils/mta_analysis.js');
 App({
 	onLaunch() {
-		mta.App.init({
-			"appID":"*******"
-		});
 		var that = this;
 	},
 	getUserData(cb) {

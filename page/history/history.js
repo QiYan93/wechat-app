@@ -1,4 +1,3 @@
-const mta = require('../../utils/mta_analysis.js');
 Page({
     data:{
         title: '查询历史',
@@ -6,9 +5,6 @@ Page({
     },
     onLoad(){
         // this.getHistory();
-    },
-    onReady(){
-        mta.Page.init();
     },
     onShow(){
         this.getHistory();

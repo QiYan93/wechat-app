@@ -1,5 +1,3 @@
-const mta = require('../../utils/mta_analysis.js');
-
 Page({
     data: {
         expressCode: [{
@@ -101,9 +99,6 @@ Page({
         number: null,
         showClear: false,
         disabled: false
-    },
-    onReady() {
-        mta.Page.init();
     },
     /* 获取快递单号 */
     getNumber(e){

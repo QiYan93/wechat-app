@@ -1,4 +1,3 @@
-const mta = require('../../utils/mta_analysis.js');
 Page({
     data:{
     },
@@ -14,9 +13,6 @@ Page({
         })
         this.setHistory(option);
         this.getData(option)
-    },
-    onReady() {
-        mta.Page.init()
     },
     /* 下拉刷新 */
     onPullDownRefresh(){

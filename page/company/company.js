@@ -1,4 +1,3 @@
-const mta = require('../../utils/mta_analysis.js');
 Page({
     data:{
         title:'请选择快递公司',
@@ -35,9 +34,6 @@ Page({
                 wx.hideToast();
             }
         })
-    },
-    onReady(){
-       mta.Page.init();
     },
     selectType(event){
         var index = event.currentTarget.dataset.index;
